@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+"""Module
+docstring"""
+
 # Single line comment
 
 def main():
@@ -8,5 +11,5 @@ def main():
 
   print("Bye")
 
-if __name__=="__main__":
+if __name__ == "__main__":
   main()
