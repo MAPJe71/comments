@@ -7,7 +7,7 @@ test: comments
 	./comments
 
 lint:
-	splint *.c *.h
+	splint *.c *.h 2>&1
 
 clean:
 	-rm comments
