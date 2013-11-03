@@ -10,5 +10,5 @@ lint:
 	splint *.c *.h
 
 clean:
+	-rm *.exe
 	-rm comments
-	-rm comments.exe
