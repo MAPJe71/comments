@@ -4,7 +4,7 @@ test: comments
 	./comments
 
 comments: comments.c
-	gcc -o comments -O2 comments.c -Wall
+	gcc -O2 -Wall -o comments comments.c
 
 lint:
 	splint *.c *.h
