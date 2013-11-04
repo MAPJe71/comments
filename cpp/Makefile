@@ -7,7 +7,7 @@ comments: comments.cpp
 	g++ -O2 -Wall -Wextra -o comments comments.cpp
 
 lint:
-	cppcheck *.cpp *.h
+	cppcheck .
 
 clean:
 	-rm *.exe
