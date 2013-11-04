@@ -7,7 +7,7 @@ comments: comments.cpp
 	g++ -O2 -Wall -Wextra -o comments comments.cpp
 
 lint:
-	cppcheck .
+	cppcheck --enable=all --suppress=missingIncludeSystem .
 
 clean:
 	-rm *.exe
