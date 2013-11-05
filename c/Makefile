@@ -10,7 +10,7 @@ comments: comments.c
 	$(CC) $(FLAGS) -o comments comments.c
 
 lint:
-	splint *.c *.h
+	splint *.c *.h -preproc
 
 clean:
 	-rm *.exe
