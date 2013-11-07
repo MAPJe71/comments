@@ -1,4 +1,4 @@
-FlAGS=-Wall -Wextra -Wmost -framework Foundation -lobjc -o comments
+FLAGS=-Wall -Wextra -Wmost -Weverything -framework Foundation -lobjc -o comments
 
 all: test
 
