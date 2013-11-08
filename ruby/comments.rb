@@ -2,10 +2,11 @@
 
 # Single line comment
 
+message = 'string interpolation'
+
 puts <<END
 Ruby supports HEREDOCs.
+#{message}
 END
-
-message = "string interpolation"
 
 puts "Ruby supports #{message}."
