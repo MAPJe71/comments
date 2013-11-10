@@ -1,6 +1,6 @@
 all: test
 
-test:
+test: comments.pl
 	perl comments.pl
 
 lint:
