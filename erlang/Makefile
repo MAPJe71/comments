@@ -1,13 +1,16 @@
 all: test
 
-compile:
-	for f in *.erl; do erlc -Wall +debug_info $$f; done
-
 test: compile
 	erl -s comments -noshell
 
-~/.dialyzer_plt: compile
-	dialyzer *.beam --build_plt --quiet
+compile:
+	for f in *.erl; do erlc -Wall +debug_info $$f; done
 
-lint: ~/.dialyzer_plt
-	dialyzer *.beam
+plt:
+	dialyzer *.beam --build_plt --apps erts kernel stdlib
+
+lint: compile
+	dialyzer *.beam --quiet
+
+clean:
+	-rm *.beam
