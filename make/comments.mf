@@ -1,0 +1,5 @@
+# Single line
+
+all:
+	echo "Command will print itself above."
+	@echo "Only the output is printed."
