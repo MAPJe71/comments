@@ -1,7 +1,7 @@
 guard :shell do
-  watch(/Makefile|(.*\.c)|(.*\.h)/) do |m|
+  watch(/^Makefile|.*(c|h)$/) do |m|
     title = 'Test'
-    eager 'make test'
+    eager 'make lint'
     status = ($?.success? && :success) || :failed
     n '', title, status
     ''
