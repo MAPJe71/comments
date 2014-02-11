@@ -1,3 +1,5 @@
+// Copyright (C) YelloSoft
+
 // Single line
 
 /*
@@ -14,6 +16,8 @@
 #else
   // ...
 #endif
+
+#include <stdlib>
 
 int main() {
   return 0;

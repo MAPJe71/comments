@@ -1,3 +1,5 @@
+// Copyright (C) YelloSoft
+
 // Single line
 
 /*
