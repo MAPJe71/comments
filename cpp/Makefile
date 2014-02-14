@@ -1,13 +1,15 @@
 CC=clang++
 FLAGS=-O2 -Wall -Wextra -Weffc++ -Wmost -Weverything
 
+BIN=comments
+
 all: test
 
-test: comments
-	./comments
+test: $(BIN)
+	./$(BIN)
 
-comments: comments.cpp
-	$(CC) $(FLAGS) -o comments comments.cpp
+$(BIN): comments.cpp
+	$(CC) $(FLAGS) -o $(BIN) comments.cpp
 
 cppcheck:
 	cppcheck --enable=all --suppress=missingIncludeSystem .
@@ -26,6 +28,9 @@ vera++:
 
 lint: cppcheck cpplint splint vera++
 
+valgrind: $(BIN)
+	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes --dsymutil=yes ./$(BIN)
+
 clean:
 	-rm *.exe
-	-rm comments
+	-rm $(BIN)

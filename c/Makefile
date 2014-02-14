@@ -1,13 +1,15 @@
 CC=clang
 FLAGS=-O2 -Wall -Wextra -Wmost -Weverything
 
+BIN=comments
+
 all: test
 
-test: comments
-	./comments
+test: $(BIN)
+	./$(BIN)
 
-comments: comments.c
-	$(CC) $(FLAGS) -o comments comments.c
+$(BIN): comments.c
+	$(CC) $(FLAGS) -o $(BIN) comments.c
 
 splint:
 	find . -type f -name '*.c' -exec splint {} \;
@@ -20,6 +22,9 @@ vera++:
 
 lint: splint vera++
 
+valgrind: $(BIN)
+	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes --dsymutil=yes ./$(BIN)
+
 clean:
 	-rm *.exe
-	-rm comments
+	-rm $(BIN)
