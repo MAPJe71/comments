@@ -12,8 +12,9 @@ public final class Comments {
   public static void main(final String[] args) {
     // Single line
 
-    /* Multi
-       Line
+    /*
+      Multiline
+      Comment
     */
   }
 }
