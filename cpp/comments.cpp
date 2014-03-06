@@ -3,7 +3,8 @@
 // Single line
 
 /*
-  Multi line
+  Multiline
+  Comment
  */
 
 /*
