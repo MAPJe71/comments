@@ -5,8 +5,8 @@
 
 -- Single line comment
 
-{- Multi
-line
+{-
+Multiline
 comment
 -}
 
