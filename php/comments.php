@@ -3,8 +3,7 @@
 # Single line comment
 
 $message = <<<END
-Muli
-line
+Muliline
 Heredoc
 END;
 
