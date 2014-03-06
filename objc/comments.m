@@ -2,7 +2,10 @@
 
 // Single line
 
-/* Multi line */
+/*
+Multiline
+Comment
+*/
 
 int main() {
   return 0;
