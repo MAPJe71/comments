@@ -1,0 +1,11 @@
+--() { :; }; exec psql -f "$0"
+
+-- Traditional SQL comment
+-- is also what PostgreSQL uses
+
+-- That funky code at the very top on line 1
+-- is a sweet shebang that doesn't make
+-- psql complain (psql hates traditional
+-- #!... shebangs).
+
+SELECT 'A string';
