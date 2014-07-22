@@ -1,7 +1,7 @@
 #!/usr/bin/env runhaskell
 
--- Allows command line flags to derive Typeable and Data
-{-# LANGUAGE ScopedTypeVariables, DeriveDataTypeable #-}
+-- Allows command line flags to derive Typeable
+{-# LANGUAGE ScopedTypeVariables #-}
 
 -- Single line comment
 
@@ -9,6 +9,8 @@
 Multiline
 comment
 -}
+
+module Comments where
 
 -- Type signature
 main :: IO ()
