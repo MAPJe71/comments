@@ -3,8 +3,16 @@
 -- Single line comment
 
 --[[
-   Multiline
-   comment
+  Multiline
+  comment
 ]]
 
-print("Bye")
+function main(arg)
+  print("Bye")
+end
+
+if type(package.loaded[(...)]) ~= "userdata" then
+	main(arg)
+else
+	module(..., package.seeall)
+end
