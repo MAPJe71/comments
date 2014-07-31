@@ -7,7 +7,10 @@
   comment
 ]]
 
-function main(arg)
+Comments = {}
+
+local main
+main = function(arg)
   print("Bye")
 end
 
