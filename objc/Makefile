@@ -11,7 +11,7 @@ ifneq ($(OS),Windows_NT)
 	endif
 endif
 
-BIN=comments
+BIN=bin/comments
 
 all: test
 
@@ -19,6 +19,7 @@ test: $(BIN)
 	./$(BIN)
 
 $(BIN): comments.m
+	mkdir -p bin/
 	clang $(FLAGS) $(LINUX_FLAGS) -o $(BIN) comments.m
 
 lint:
@@ -28,5 +29,4 @@ valgrind: $(BIN)
 	valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --track-fds=yes --dsymutil=yes ./$(BIN)
 
 clean:
-	-rm *.exe
-	-rm $(BIN)
+	-rm -rf bin/
