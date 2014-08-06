@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Single line
 echo "Comments"
