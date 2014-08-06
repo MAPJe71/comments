@@ -11,20 +11,4 @@ Multiline
 
  *)
 
-(*
-
-Interpret
-
-./comments.ml
-
-Compile
-
-ocamlc -w +a -o comments comments.ml
-
-Run
-
-./comments
-
- *)
-
 let main = print_endline "Hello World!"
