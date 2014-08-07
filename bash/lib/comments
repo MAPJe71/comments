@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Single line
+echo "Comments"
