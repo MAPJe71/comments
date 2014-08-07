@@ -1,0 +1,4 @@
+#!/bin/dash
+
+# Single line
+echo "Comments"
