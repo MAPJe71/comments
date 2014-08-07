@@ -1,0 +1,4 @@
+#!/bin/ash
+
+# Single line
+echo "Comments"
