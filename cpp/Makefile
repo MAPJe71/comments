@@ -6,7 +6,7 @@ BIN=bin/comments
 all: test
 
 test: $(BIN)
-	./$(BIN)
+	$(BIN)
 
 $(BIN): comments.cpp
 	mkdir -p bin/
