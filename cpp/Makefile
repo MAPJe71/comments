@@ -1,5 +1,5 @@
 CC=clang++
-FLAGS=-O2 -Wall -Wextra -Weffc++ -Wmost -Weverything
+FLAGS=-O2 -Wall -Wextra -Weffc++ -Wmost -Weverything -Wno-c++98-compat
 
 BIN=bin/comments
 
