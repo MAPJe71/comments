@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+# Single line
+echo "Comments"
