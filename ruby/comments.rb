@@ -2,16 +2,20 @@
 
 # Single line comment
 
-message = 'string interpolation'
+def main
+  message = 'string interpolation'
 
-puts 'A
+  puts 'A
 long
 paragraph
 of text.'
 
-puts <<END
+  puts <<END
 Ruby supports HEREDOCs.
 #{message}
 END
 
-puts "Ruby supports #{message}."
+  puts "Ruby supports #{message}."
+end
+
+main if $PROGRAM_NAME == __FILE__
