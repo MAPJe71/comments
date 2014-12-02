@@ -1,3 +1,5 @@
+package us.yellosoft.comments;
+
 /**
    <p>Java doc</p>
 */
