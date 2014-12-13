@@ -1,5 +1,7 @@
 ":"; exec csi -ss $0 ${1+"$@"}
 
+; Single line
+
 (define (main args)
   (display "Hello\n"))
 
