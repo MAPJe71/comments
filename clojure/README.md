@@ -5,6 +5,6 @@ A demonstration of comment syntax in Clojure
 # EXAMPLE
 
 ```
-$ lein exec comments.clj 
+$ lein exec comments.clj
 Hello World!
 ```

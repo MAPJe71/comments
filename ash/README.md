@@ -5,11 +5,12 @@ Demonstration of comment syntax in `ash`
 # EXAMPLE
 
 ```
-$ cat lib/comments 
+$ cat lib/comments
 #!/usr/bin/env ash
 
 # Single line
 echo "Comments"
-$ ash lib/comments 
+
+$ ash lib/comments
 Comments
 ```

@@ -6,7 +6,7 @@ Programming and formatting languages tend to feature some form of code commentin
 
 ```
 $ cd perl/
-$ cat comments.pl 
+$ cat comments.pl
 #!/usr/bin/env perl
 use strict;
 use warnings;
@@ -17,6 +17,7 @@ Doc
 END
 
 # Single line
+
 $ perl comments.pl
 $
 ```

@@ -5,13 +5,14 @@ Demonstration of R comment syntax
 # EXAMPLE
 
 ```
-$ cat comments.R 
+$ cat comments.R
 #!/usr/bin/env Rscript
 
 # Single line comment
 
 cat("Bye\n")
 q()
-$ Rscript comments.R 
+
+$ Rscript comments.R
 Bye
 ```

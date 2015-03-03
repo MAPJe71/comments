@@ -5,11 +5,12 @@ A demonstration of comment syntax in `bash`
 # EXAMPLE
 
 ```
-$ cat lib/comments 
+$ cat lib/comments
 #!/usr/bin/env bash
 
 # Single line
 echo "Comments"
-$ bash lib/comments 
+
+$ bash lib/comments
 Comments
 ```
