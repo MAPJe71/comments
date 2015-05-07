@@ -2,3 +2,12 @@
 
 # Single line
 echo "Comments"
+
+message=$(cat <<EOF
+This is
+a multiline
+HEREDOC
+EOF
+)
+
+echo "$message"
