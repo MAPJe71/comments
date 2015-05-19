@@ -1,5 +1,11 @@
 # Single line
 
+define MESSAGE
+This is a \
+HEREDOC
+endef
+
 all:
 	echo "Command will print itself above."
 	@echo "Only the output is printed."
+	echo '$(MESSAGE)'
