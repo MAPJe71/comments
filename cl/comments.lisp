@@ -6,6 +6,10 @@ exec clisp -q -q $0 $0 ${1+"$@"}
 (defun hello-main (args)
   (format t "Hello from main!~%"))
 
+(defvar text #>eofThis
+is a heredoc
+eof)
+
 ;;; With help from Francois-Rene Rideau
 ;;; http://tinyurl.com/cli-args
 (let ((args
