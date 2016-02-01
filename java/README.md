@@ -14,8 +14,9 @@ $
 ## Optional
 
 * [Sonar](http://www.sonarqube.org/)
+* [Infer](http://fbinfer.com/)
 
-E.g., `brew install gradle sonar sonar-runner`
+E.g., `brew install gradle sonar sonar-runner infer`
 
 # JAVADOCS
 
@@ -50,4 +51,10 @@ $ open build/reports/findbugs/main.html
 $ sonar start
 $ gradle check sonar
 $ open http://localhost:9000/
+```
+
+## Optional: Infer
+
+```
+$ infer -- gradle clean build
 ```
