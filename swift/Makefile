@@ -9,3 +9,8 @@ bin/Comments: Comments.swift
 
 clean:
 	-rm -rf bin/
+
+swiftlint:
+	swiftlint
+
+lint: swiftlint
