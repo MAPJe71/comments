@@ -1,4 +1,11 @@
-BIN=bin/comments
+# Windows
+ifeq ($(OS),Windows_NT)
+	EXTENSION=.exe
+else
+	EXTENSION=
+endif
+
+BIN=bin/comments$(EXTENSION)
 
 all: test
 
