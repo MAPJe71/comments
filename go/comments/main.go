@@ -1,10 +1,10 @@
 package main
 
 func main() {
-  // Single line
+	// Single line
 
-  /*
-  Multi-
-  line
-  */
+	/*
+	  Multi-
+	  line
+	*/
 }
