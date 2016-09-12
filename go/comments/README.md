@@ -1,5 +1,5 @@
 # INSTALL
 
 ```
-$ go get github.com/mcandre/comments/go/comments
+$ go get [-u] github.com/mcandre/comments/go/comments/...
 ```
