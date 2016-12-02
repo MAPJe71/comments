@@ -4,9 +4,10 @@
 
 ## Optional
 
-* [Git](https://git-scm.com)
-* [Make](https://www.gnu.org/software/make/)
-* [Bash](https://www.gnu.org/software/bash/)
+* [git](https://git-scm.com)
+* [make](https://www.gnu.org/software/make/)
+* [bash](https://www.gnu.org/software/bash/)
+* [grep](https://www.gnu.org/software/grep/manual/grep.html)
 * [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports) (e.g. `go get golang.org/x/tools/cmd/goimports`)
 
 # INSTALL FROM REMOTE GIT REPOSITORY
