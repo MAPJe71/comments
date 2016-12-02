@@ -14,3 +14,4 @@ Robust C code requires vigilance, whereas Go automatically solves most of these 
 * [cppcheck](http://cppcheck.sourceforge.net)
 * [splint](http://www.splint.org)
 * [vera++](https://bitbucket.org/verateam/vera/wiki/Home)
+* [valgrind](http://valgrind.org)
