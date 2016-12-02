@@ -14,3 +14,7 @@ echo "Comments"
 $ bash lib/comments
 Comments
 ```
+
+# REQUIREMENTS
+
+* [bash](https://www.gnu.org/software/bash/)

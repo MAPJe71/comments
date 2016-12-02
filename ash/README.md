@@ -14,3 +14,7 @@ echo "Comments"
 $ ash lib/comments
 Comments
 ```
+
+# REQUIREMENTS
+
+* [dash](http://www.in-ulm.de/~mascheck/various/ash/)

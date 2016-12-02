@@ -16,3 +16,7 @@ q()
 $ Rscript comments.R
 Bye
 ```
+
+# REQUIREMENTS
+
+* [R](https://www.r-project.org)
