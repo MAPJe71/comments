@@ -52,6 +52,10 @@ task :gofmt => [] do
   sh 'gofmt -s -w .'
 end
 
+task :bashate => [] do
+  sh 'find . \( -wholename \'*/.git/*\' -o -wholename \'*/node_modules*\' -o -name \'*.bat\' \) -prune -o -type f \( -wholename \'*/hooks/*\' -o -name \'*.sh\' -o -name \'*.bashrc*\' -o -name \'.*profile*\' -o -name \'*.envrc*\' \) -print | xargs bashate'
+end
+
 task :shlint => [] do
   sh 'find . \( -wholename \'*/node_modules*\' -o -name \'*.bat\' \) -prune -o -type f \( -name \'*.sh\' -o -name \'*.bashrc*\' -o -name \'.*profile*\' -o -name \'*.envrc*\' \) -print | xargs shlint'
 end
@@ -76,6 +80,7 @@ task :lint => [
   :jslint,
   :eslint,
   :gofmt,
+  :bashate,
   :shlint,
   :checkbashisms,
   :shellcheck
