@@ -33,7 +33,7 @@ indent_style = space
 [{*.md,*.markdown}]
 indent_size = none
 
-[{*.c,*.h,*.cpp,*.d,*.rb,*.js,*.json,*.java,*.groovy,*.scala,*.gradle,*.xml,*.yml,*.yaml,*.awk,*.ahk,Rakefile,Gemfile*,Guardfile*,Vagrantfile*,*.pp,*.ps1,.bowerrc,.eslintrc,.jshintrc,.jslintrc,.vimrc,*.reek,CMakeLists.txt,*.lua,*.m,*.mm,*.rs,*.vala}]
+[{*.c,*.h,*.cpp,*.d,*.rb,*.js,*.json,*.java,*.groovy,*.scala,*.gradle,*.xml,*.yml,*.yaml,*.awk,*.ahk,Rakefile,Gemfile*,Guardfile*,Vagrantfile*,*.pp,*.ps1,.bowerrc,.eslintrc,.jshintrc,.jslintrc,.vimrc,*.reek,CMakeLists.txt,*.lua,*.m,*.mm,*.rs,*.vala,*.erl,*.escript}]
 indent_size = 2
 
 # JavaScript
