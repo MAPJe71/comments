@@ -11,3 +11,5 @@ EOF
 )
 
 echo "$message"
+
+echo "${@:1}"
