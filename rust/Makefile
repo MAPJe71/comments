@@ -1,16 +1,14 @@
 FLAGS=-O
 
-BIN=bin/comments
+BIN=target/debug/comments
 
 all: test
 
 test: $(BIN)
 	$(BIN)
 
-$(BIN): comments.rs
-	mkdir -p bin
-	rustc -o $(BIN) comments.rs $(FLAGS)
+$(BIN): src/bin/comments.rs
+	cargo build
 
 clean:
-	-rm -rf bin
-	-rm -rf *.dSYM
+	-rm -rf target
