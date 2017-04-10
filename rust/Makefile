@@ -1,4 +1,4 @@
-FLAGS=-O -W missing-doc -W non-uppercase-statics -W unnecessary-qualification -W unnecessary-typecast -W unused-result
+FLAGS=-O
 
 BIN=bin/comments
 
@@ -8,9 +8,9 @@ test: $(BIN)
 	$(BIN)
 
 $(BIN): comments.rs
-	mkdir -p bin/
+	mkdir -p bin
 	rustc -o $(BIN) comments.rs $(FLAGS)
 
 clean:
-	-rm -rf bin/
+	-rm -rf bin
 	-rm -rf *.dSYM
